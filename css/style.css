@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol {
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+    line-height: 0.8;
+}
+.head h2{
+    color: #555555;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    padding-bottom: 14px;
+}
+.head p{
+    color: #8c8c8c;
+    font-size: 16px;
+    font-weight: 300;
+    font-family:'montserrat', sans-serif;
+    text-transform: capitalize;
+    line-height: 28px;
+    padding: 0 20px;
+}
+/*======= Navbar part goes here =======*/
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    font-family:'montserrat', sans-serif;
+    text-transform: capitalize;
+    padding-left: 20px;
+    transition: all linear .3s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #c7b299;
+}
+.navbar{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+}
+/*======= banner part goes here =======*/
+#banner{
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.banner-text{
+    height: 100vh;
+}
+#banner::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(17, 17, 17, 0.7);
+}
+.banner-main{
+    position: relative;
+    z-index: 99;
+}
+.content h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.content h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 52px;
+    color: #fff;
+    font-weight: 800;
+    padding-bottom: 30px;
+}
+.content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 24px;
+    padding-bottom: 47px;
+}
+.content a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #998675;
+    padding:20px 38px;
+    border-radius: 3px;
+    border-bottom: 3px solid #736357;
+}
+/*======= service part goes here =======*/
+#service{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.service-item i {
+    font-size: 50px;
+    color: #555555;
+    transition: all linear .3s;
+}
+.service-item h3 {
+    font-size: 22px;
+    color: #555555;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 18px;
+    transition: all linear .3s;
+}
+.service-item p {
+    font-size: 14px;
+    color: #8c8c8c;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    padding-top: 10px;
+    position: relative;
+    padding-bottom: 30px;
+}
+.service-item p:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+    transition: all linear .3s;
+}
+.service-item:hover i{
+    color: #c7b299;
+}
+.service-item:hover h3{
+    color: #c7b299;
+}
+.service-item:hover p:before{
+    background-color: #c7b299;
+}
+/*======= project part goes here =======*/
+.nav-tabs .nav-link{
+    margin:0 5px;
+    padding:10px 18px;
+    background-color: transparent;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #8c8c8c;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background: #998675;
+    color: #fff;
+    border-radius: 3px;
+}
+.nav-tabs .all-btn{
+    padding:10px 26px;
+}
+.card{
+    background: #fbfaf8;
+    margin-bottom: 24px;
+}
+.card-body {
+	padding:30px 30px;
+    transition: all linear .3s;
+}
+.card-title{
+    color: #c7b299;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 5px;
+    transition: all linear .3s;
+}
+.card-text{
+    color: #d1d1d1;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform:  capitalize;
+    transition: all linear .3s;
+}
+.card-img{
+    position: relative;
+}
+.card-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.7);
+    opacity: 0;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+.card-icon i{
+    font-size: 26px;
+    color: #fff;
+    margin: 0 15px;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+.card-icon i:hover{
+    color: #c7b299;
+}
+.card:hover .card-overlay{
+    opacity: 1;
+    transform: scale(1);
+}
+.card:hover .card-body{
+    background:#362f2d ;
+}
+.card:hover .card-title{
+    color: #fff;
+}
+.card:hover .card-text{
+    color:#c7b299;
+}
+.load-btn{
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+.load-btn  a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #998675;
+    padding:20px 38px;
+    border-radius: 3px;
+    border-bottom: 3px solid #736357;
+}
+/*======= video part goes here =======*/
+#video{
+    background: url(../images/video-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 223px;
+    padding-bottom: 252px;
+    position: relative;
+}
+#video::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(17, 17, 17, 0.7);
+}
+.video-text{
+    position: relative;
+    z-index: 999;
+}
+.video-content i{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    line-height: 100px;
+    font-size: 70px;
+    color: #fff;
+}
+.video-content h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 44px;
+    font-weight: 500;
+}
+.video-content p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 15px;
+    line-height: 24px;
+}
+
+/*======= counter part goes here =======*/
+#counter{
+    background:linear-gradient(to right, #211b19,#4e3427);
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+.counter-item i {
+    color: #fff;
+    font-size: 45px;
+}
+.counter-item h3 {
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding-top: 28px;
+    padding-bottom: 21px;
+}
+.counter-item h5 {
+    color: #c7b299;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+/*======= Navbar part goes here =======*/
